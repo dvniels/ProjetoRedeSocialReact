@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #34495e;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 1rem;
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-card,
+.post-card,
+.comment-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover,
+.post-card:hover,
+.comment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2,
+h3 {
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #7f8c8d;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.list-layout {
+  display: block;
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.back-button {
+  margin-top: 20px;
+  background-color: #7f8c8d;
+}
+
+button.back-button:hover {
+  background-color: #95a5a6;
+}
+
+.layout-toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.comment-card {
+  position: relative;
+}
+
+.comment-card button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #c92917;
+  padding: 5px;
+  font-size: 0.8rem;
+  line-height: 1;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border: none;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.list-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.comment-card button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  header,
+  footer {
+    text-align: center;
+  }
+}
